@@ -9,13 +9,14 @@ values = np.arange(2, 13)
 counts = np.bincount(totals, minlength=13)[2:]
 exact = np.array([1,2,3,4,5,6,5,4,3,2,1]) / 36
 
-plt.bar(values, counts / n, label="Simulated")
-plt.plot(values, exact, "ro-", label="Exact")
-plt.xlabel("Total of two dice")
-plt.ylabel("Probability")
-plt.title("Two dice: simulation vs exact")
-plt.legend()
-plt.show()
+# plt.bar(values, counts / n, label="Simulated")
+# plt.plot(values, exact, "ro-", label="Exact")
+# plt.xlim(0, 100)
+# plt.xlabel("Total of two dice")
+# plt.ylabel("Probability")
+# plt.title("Two dice: simulation vs exact")
+# plt.legend()
+# plt.show()
 
 #probability of obtaining a sum of 7 with respect to each run
 is_seven = (totals == 7)
